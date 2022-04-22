@@ -6,7 +6,7 @@ static_resources:
       filter_chains:
       - filters:
         - name: envoy.http_connection_manager
-          config:
+          typed_config:
             stat_prefix: ingress_http
             route_config:
               name: local_route
